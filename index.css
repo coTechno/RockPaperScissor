@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+}
+body {
+  margin: auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+    url("bg.jpg") no-repeat center/cover;
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  height: 100vh;
+  width: 100vw;
+  color: rgba(34, 2, 5, 0);
+}
+.container h1 {
+  position: absolute;
+  top: 5%;
+  color: #000;
+  text-shadow: 0px 0px 5px #fff;
+  margin: 16px;
+  font-size: 60px;
+  font-weight: 700 !important;
+}
+.container p {
+  position: absolute;
+  top: 20%;
+  margin: 10px;
+  padding: 0 25px;
+  color: #fff;
+  font-size: 23px;
+  text-shadow: 5px 5px 8px #9c9898;
+}
+.container .score {
+  position: relative;
+  top: 12%;
+  display: none;
+  background-color: #fff;
+  margin: 10px;
+  background-color: #93e9dd;
+  box-shadow: 0px 0px 15px #93e9dd;
+  color: #000;
+  border-radius: 20px;
+  padding: 10px 20px;
+  width: fit-content;
+  font-size: 23px;
+}
+.container .message {
+  position: relative;
+  top: 12%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #93e9dd;
+  box-shadow: 0px 0px 15px #93e9dd;
+  color: #000;
+  border-radius: 20px;
+  margin: 10px;
+  width: 196px;
+  padding: 10px 20px;
+  font-size: 23px;
+}
+.container .buttons {
+  position: relative;
+  top: 12%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.container .btn {
+  margin: 10px;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid #000;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #000;
+  padding: 10px 20px;
+  width: 200px;
+  font-size: 23px;
+}
+.container .btn:hover {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0px 0px 15px #fff;
+  border: none;
+  transition: 0.3s ease-in;
+}
+@media (max-width: 671px) {
+  .container h1 {
+    margin: 5px;
+    font-size: 28px;
+  }
+  .container p{
+    top: 12%;
+    font-size: 15px;
+  }
+  .container .message{
+    width: 57vw;
+  }
+}
